@@ -1,0 +1,670 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+#backgroundMain{
+background-image: url("../img/Brick-Wall-Realistic/4683.jpg");
+background-size: cover;
+height: 950px;
+}
+
+
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+/*img,*/
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+$animated-search-form-initial-width: 10rem;
+$animated-search-form-transition-duration: 0.4s;
+
+.animated-search-form[type=search] {
+  width: $animated-search-form-initial-width;
+  border: 0.125rem solid $light-gray;
+  box-shadow: 0 0 3.125rem rgba(0,0,0, 0.18);
+  border-radius: $global-radius;
+  background-image: url('//image.ibb.co/i7NbrQ/search_icon_15.png');
+  background-position: 0.625rem 0.625rem;
+  background-repeat: no-repeat;
+  padding: 0.75rem 1.25rem 0.75rem 2rem;
+  transition: width $animated-search-form-transition-duration ease-in-out;
+
+  &:focus {
+    width: 100%;
+  }
+}
+
+#header{
+    margin-left: 3em;
+}
+
+.top-bar{
+    background: transparent;
+  /*  overflow: visible;*/
+}
+
+.top-bar-section ul li{
+    background: transparent;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button){
+    background: transparent;
+}
+
+#product-selected{
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+    margin-left: 20rem;
+}
+
+#amazonProduct{
+    width: 400px;
+    background: transparent;
+    border: none;
+}
+
+#mapHere{
+    width: 600px;
+
+    }
+
+#productsFound{
+    padding: 1rem;
+    margin-left: 6em;
+} 
+
+h6{
+    margin-left: 6em;
+}
+
+
+.product-details {
+  background: transparent;
+  /*background: transparent;*/
+  padding: 6rem;
+}
+
+form{
+    padding-top: 15em;
+    margin-right: 10em;
+    margin-left: 10em;
+}
+
+.product-option-selection input[type=radio] {
+  display: none;
+  margin: 10px;
+}
+
+.product-option-selection input[type=radio] + label {
+  display: inline-block;
+  margin: -2px;
+  border-color: #ddd;
+  margin-right: 0.3rem;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  padding: 0.4rem;
+}
+
+.product-option-selection input[type=radio]:checked + label {
+  background: #b6ddf6;
+  border: 1px solid #1779ba;
+  border-radius: 3px;
+  color: #3d3d3d;
+  font-weight: 600;
+  padding: 0.3rem;
+}
+
+
+.product-card {
+  background: transparent;
+  /*border: 1px solid #e6e6e6;*/
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.product-card-thumbnail {
+  display: block;
+  position: relative;
+}
+
+.product-card-title {
+  font-family: 'Open sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.45rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.product-card-desc {
+  color: #8a8a8a;
+  display: block;
+  font-family: 'Open sans', sans-serif;
+  font-size: 0.85rem;
+}
+
+.product-card-price {
+  color: #3e3e3e;
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.8rem;
+}
+
+.product-card-sale {
+  color: #cacaca;
+  display: inline-block;
+  font-size: 0.85rem;
+  margin-left: 0.3rem;
+  text-decoration: line-through;
+}
+
+.product-card-colors {
+  display: block;
+  margin-top: 0.8rem;
+}
+
+.product-card-color-option {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+}
+
+
+
+#header-links, li, a{
+    color: black;
+    height: 40%;
+    background: transparent;
+
+}
+
+
+.ecommerce-header a {
+  color: #8a8a8a;
+  transition: color 0.5s ease;
+  display: block;
+}
+
+.ecommerce-header a:hover {
+  color: #0b0b0b;
+  transition: color 0.5s ease;
+}
+
+.ecommerce-header input {
+  margin-right: 0px;
+}
+
+@media screen and (max-width: 74.9375em) {
+  .ecommerce-header input {
+    width: 150px;
+  }
+}
+
+.ecommerce-header.top-bar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.ecommerce-header .button.search-button {
+  width: 39px;
+  height: 39px;
+  background-size: 20px 20px;
+  background-image: url("https://placehold.it/20x20");
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0px;
+}
+
+.ecommerce-header .menu > .main-nav-link > a {
+  padding: 1.5em 0.85em 1.9em 0.85em;
+}
+
+.ecommerce-header-top {
+  width: 100%;
+  background-color: #575757;
+  height: 50px;
+  padding: 8px 20px 10px 20px;
+
+}
+
+.ecommerce-header-top .fa {
+  color: #fefefe;
+  font-size: 1.5rem;
+}
+
+.ecommerce-header-top-message {
+  color: white;
+  float: left;
+}
+
+.ecommerce-header-top-links {
+  color: white;
+}
+
+.ecommerce-header-top-links ul li {
+  display: inline;
+  padding-left: 20px;
+}
+
+.ecommerce-header-top-links a {
+  color: white;
+  transition: color 0.5s ease;
+}
+
+.ecommerce-header-top-links a:hover {
+  color: white;
+  transition: color 0.5s ease;
+}
+
+.ecommerce-header-off-canvas {
+  background-color: #575757;
+}
+
+.ecommerce-header-off-canvas .menu {
+  padding: 1rem 0;
+}
+
+.ecommerce-header-off-canvas .menu a {
+  color: #8a8a8a;
+}
+
+.ecommerce-header-mobile {
+  background-color: #575757;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.625rem 1.25rem;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ecommerce-header-mobile-left,
+.ecommerce-header-mobile-right,
+.ecommerce-header-mobile-center {
+  -webkit-flex: 1 0 0;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+}
+
+.ecommerce-header-mobile-left {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.ecommerce-header-mobile-center {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ecommerce-header-mobile-right {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.ecommerce-header-mobile-right .fa {
+  color: #fefefe;
+  font-size: 1.5rem;
+}
+
+.ecommerce-header-search-exandable input[type=search] {
+  margin: 0 1rem;
+  background: #e6e6e6 url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+  border: solid 1px #cacaca;
+  padding: 9px 10px 9px 26px;
+  width: 35px;
+  border-radius: 5000px;
+  transition: all 0.5s;
+}
+
+.ecommerce-header-search-exandable input[type=search]:focus {
+  width: 120px;
+  background-color: #fefefe;
+  border-color: #1779ba;
+  box-shadow: 0 0 5px rgba(23, 121, 186, 0.5);
+}
+
+.ecommerce-header-search-exandable input:-moz-placeholder {
+  color: #8a8a8a;
+}
+
+.ecommerce-header-search-exandable input::-webkit-input-placeholder {
+  color: #8a8a8a;
+}
+
+.ecommerce-header-search-exandable input[type=search]:hover {
+  background-color: #fefefe;
+}
+
+
+
+.ecommerce-footer {
+  background-color: #fefefe;
+  padding: 70px 20px 40px 20px;
+}
+
+#ecommerce-footer-links h5 {
+  color: #0a0a0a;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#ecommerce-footer-links .menu > li > a {
+  line-height: 1.5em;
+  padding: 0.5rem 0rem;
+}
+
+#ecommerce-footer-links a {
+  color: #707070;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+}
+
+#ecommerce-footer-links a:hover {
+  color: #0a0a0a;
+  transition: all 0.5s ease;
+}
+
+
+
+
+
+@media screen and (max-width: 63.9375em) {
+  #ecommerce-footer-links  {
+    margin-bottom: 3rem;
+  }
+}
+
+.ecommerce-footer-bottom-bar {
+  border-top: 1px solid #e6e6e6;
+  margin-top: 40px;
+  padding-bottom: 80px;
+  padding-top: 30px;
+}
+
+.ecommerce-footer-bottom-bar .menu > li > a {
+  line-height: 1.2em;
+  padding: 10px 0;
+}
+
+.ecommerce-footer-bottom-bar a {
+  color: #8a8a8a;
+  font-size: 0.9rem;
+  transition: all 0.5s ease;
+}
+
+.ecommerce-footer-bottom-bar a:hover {
+  color: #0a0a0a;
+  transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .ecommerce-footer-bottom-bar ul {
+    text-align: center;
+  }
+}
+
+.ecommerce-footer-bottom-bar li {
+  display: inline;
+}
+
+.ecommerce-footer-bottom-bar .bottom-links {
+  margin-top: 0.65rem;
+  margin-left: 0;
+}
+
+.ecommerce-footer-bottom-bar .bottom-links li {
+  padding-right: 2rem;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .ecommerce-footer-bottom-bar .bottom-links li {
+    text-align: center;
+  }
+}
+
+.ecommerce-footer-bottom-bar {
+  text-align: center;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .ecommerce-footer-bottom-bar {
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.ecommerce-footer-bottom-bar .bottom-copyright {
+  color: #8a8a8a;
+  font-size: 0.9rem;
+  line-height: 1.2em;
+  padding-top: 1rem;
+  text-align: right;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .ecommerce-footer-bottom-bar .bottom-copyright {
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
