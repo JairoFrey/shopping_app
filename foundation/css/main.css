@@ -7,10 +7,11 @@ html {
 }
 
 body{
-  height: 100%;
-  background-image: url("../img/Brick-Wall-Realistic/4683.jpg");
-  background-size: cover;
-  
+  background: url("../img/Brick-Wall-Realistic/4683.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100%;
 }
 
 
@@ -95,12 +96,17 @@ $animated-search-form-transition-duration: 0.4s;
     
 }
 
+button.secondary.button{
+  color: #c2c2a3;
+}
+
 
 
 .top-bar{
     background: transparent;
-  /*  overflow: visible;*/
+  /*  overflow: visible; */
 }
+
 
 .top-bar-section ul li{
     background: transparent;
