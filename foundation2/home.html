@@ -10,8 +10,11 @@
         <!--CSS links-->
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/foundation.min.css">
+        <!-- Insert this within your head tag and after foundation.css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css" />
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/home.css">
+        
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -21,41 +24,132 @@
 
                         <!--TOP NAVIGATION -->
  <!--============================================================================================-->       
-
- 
-    <!-- your content goes here -->
+<div class="container" id="navigation">
+ <nav class="top-bar topbar-responsive">
+  <div class="top-bar-title">
+    <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle></button>
+    </span>
+    <a class="topbar-responsive-logo" href="#">
+      <strong>AIShA</strong>
+    </a>
+  </div>
+  <div id="topbar-responsive" class="topbar-responsive-links">
+    <div class="top-bar-right">
+      <ul class="menu simple vertical medium-horizontal">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Services</a>
+        </li>
+        
+        <li>
+          <button type="button" class="button hollow topbar-responsive-button">Categories</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 </div>
+
 <!--============================================================================================-->
+<!--SLIDER-->
+<!--============================================================================================-->
+<div class="orbit clean-hero-slider" role="region" aria-label="Favorite Space Pictures" data-orbit>
+  <div class="orbit-wrapper">
+    <div class="orbit-controls">
+      <button class="orbit-previous">
+        <span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+      <button class="orbit-next">
+        <span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+    </div>
+    <ul class="orbit-container">
+      <li class="orbit-slide">
+        <figure class="orbit-figure">
+          <img class="orbit-image" src="/Users/user/Desktop/AIShA-project2/foundation2/img/clothes.jpg" alt="image alt text">
+          <figcaption class="orbit-caption">
+            <h3>Lorem Ipsum Etiam</h3>
+            <p>Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper.</p>
+            <a href="#" class="button yellow">Mattis Elit</a>
+          </figcaption>
+        </figure>
+      </li>
+      <li class="orbit-slide">
+        <figure class="orbit-figure">
+          <img class="orbit-image" src="/Users/user/Desktop/AIShA-project2/foundation2/img/electronics.jpg" alt="image alt text">
+          <figcaption class="orbit-caption">
+            <h3>Ipsum Ornare Ultricies</h3>
+            <p>Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="button yellow">Egestas Amet</a>
+          </figcaption>
+        </figure>
+      </li>
+      <li class="orbit-slide">
+        <figure class="orbit-figure">
+          <img class="orbit-image" src="/Users/user/Desktop/AIShA-project2/foundation2/img/furniture2.jpg" alt="image alt text">
+          <figcaption class="orbit-caption">
+            <h3>Malesuada Parturient</h3>
+            <p>Fusce dapibus, tellus ac cursus commodo, sit amet risus. Cras mattis consectetur purus sit amet fermentum. Maecenas
+              sed diam sit amet non magna.</p>
+            <a href="#" class="button yellow">Sollicitudin</a>
+          </figcaption>
+        </figure>
+      </li>
+    </ul>
+  </div>
+  <nav class="orbit-bullets">
+    <button class="is-active" data-slide="1">
+      <span class="show-for-sr">Lorem Ipsum Etiam</span>
+    </button>
+    <button data-slide="2">
+      <span class="show-for-sr">Lorem Ipsum Etiam</span>
+    </button>
+    <button data-slide="3">
+      <span class="show-for-sr">Lorem Ipsum Etiam</span>
+    </button>
+  </nav>
+</div>
 
 
 
-                                    <!--SIGN UP-->
+
+    
+
+<!--============================================================================================-->
+                                    <!-SIGN UP-->
 <!--============================================================================================-->
 <div class="form-registration">
 
-    <figure class="form-registration-img">
-        <img src= alt="" />
-        <figcaption class="form-registration-img-caption">Experience everything AISha has to offer. </figcaption>
-    </figure>
+  <figure class="form-registration-img">
+    <img src="/Users/user/Desktop/AIShA-project2/foundation2/img/customer2.jpg" alt="sign_in" id="login"/>
+    <figcaption class="form-registration-img-caption"><h5>AIShA eclipses the competition.</h5></figcaption>
+  </figure>
 
-    <form class="form-registration-group" action="">
-        <input class="form-registration-input" type="email" placeholder="Your email">
-        <input class="form-registration-submit-button" type="submit" value="Continue">
-        <p class="or-divider">
-            <span>or</span>
-        </p>
-        <a class="form-registration-social-button" href="#">
-          
-        <p class="form-registration-member-signin">Already a member?
-            <a href="#">Sign in</a>
-        </p>
-        <p class="form-registration-terms">
-            <a href="#">Terms &amp; Conditions</a>|
-            <a href="#">Privacy</a>
-        </p>
-    </form>
+  <form class="form-registration-group" action="">
+    <input class="form-registration-input" type="email" placeholder="Your email">
+    <input class="form-registration-submit-button" type="submit" value="Continue">
+    <p class="or-divider">
+      <span>or</span>
+    </p>
+    
+    <p class="form-registration-member-signin" action="">Already a member?
+      <input class="form-registration-input" type="email" placeholder="Your username/email">
+      <input class="form-registration-input" type="password" placeholder="Your password">
+      <input class="form-registration-submit-button" type="submit" value="Log In">
+    </p>
+    <p class="form-registration-terms">
+      <a href="#">Terms &amp; Conditions</a>|
+      <a href="#">Privacy</a>
+    </p>
+  </form>
 
 </div>
+
 <!--============================================================================================-->
 
 
@@ -65,90 +159,137 @@
 <!--============================================================================================-->
 <!--FOOTER-->
 <!--============================================================================================-->
- <div class="ecommerce-footer">
-  <div class="ecommerce-footer-links row">
-    <div class="small-12 medium-12 large-6 columns">
-      <div class="row ecommerce-footer-links-block">
-        <div class="small-4 medium-4 large-4 columns">
-          <h5>Categories</h5>
-          <ul class="menu vertical">
-            <li><a href="#">Category 1</a></li>
-            <li><a href="#">Category 2</a></li>
-            <li><a href="#">Category 3</a></li>
-            <li><a href="#">Category 4</a></li>
-            <li><a href="#">Category 5</a></li>
-          </ul>
-        </div>
-        <div class="small-4 medium-4 large-4 columns more-categories">
-          <ul class="menu vertical">
-            <li><a href="#">Category 6</a></li>
-            <li><a href="#">Category 7</a></li>
-            <li><a href="#">Category 8</a></li>
-            <li><a href="#">Category 9</a></li>
-            <li><a href="#">Category 10</a></li>
-          </ul>
-        </div>
-        <div class="small-4 medium-4 large-4 columns">
-          <h5>Help</h5>
-          <ul class="menu vertical">
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#">Return Policy</a></li>
-            <li><a href="#">Shipping &amp; Delivery</a></li>
-          </ul>
-        </div>
+<div id="engadget-footer-sitemap-container">
+  <footer id="engadget-footer-sitemap">
+    <div class="links">
+      <div class="link-column">
+        <ul class="menu vertical">
+          <li>
+            <a href="#">One</a>
+          </li>
+          <li>
+            <a href="#">Two</a>
+          </li>
+          <li>
+            <a href="#">Three</a>
+          </li>
+          <li>
+            <a href="#">Four</a>
+          </li>
+        </ul>
       </div>
+      <div class="link-column">
+        <ul class="menu vertical">
+          <li>
+            <a href="#">One</a>
+          </li>
+          <li>
+            <a href="#">Two</a>
+          </li>
+          <li>
+            <a href="#">Three</a>
+          </li>
+          <li>
+            <a href="#">Four</a>
+          </li>
+        </ul>
+      </div>
+      <div class="link-column">
+        <ul class="menu vertical">
+          <li>
+            <a href="#">One</a>
+          </li>
+          <li>
+            <a href="#">Two</a>
+          </li>
+          <li>
+            <a href="#">Three</a>
+          </li>
+          <li>
+            <a href="#">Four</a>
+          </li>
+        </ul>
+      </div>
+      <div class="link-column">
+        <ul class="menu vertical">
+          <li>
+            <a href="#">One</a>
+          </li>
+          <li>
+            <a href="#">Two</a>
+          </li>
+          <li>
+            <a href="#">Three</a>
+          </li>
+          <li>
+            <a href="#">Four</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
+<div id="engadget-footer-social-container">
+  <footer id="engadget-footer-social">
+    <div class="footer-left">
+      <div class="newsletter">
+        <h6>Sign up for our newsletter</h6>
+        <div class="input-group">
 
+          <input class="input-group-field" type="email" placeholder="Email address">
+          <div class="input-group-button">
+            <input type="submit" class="button" value="Submit">
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="small-12 medium-12 large-6 columns">
-     <div class="row">
-       <div class="small-4 medium-4 large-4 columns">
-        <h5>My Account</h5>
-        <ul class="menu vertical">
-          <li><a href="#">Sign In</a></li>
-          <li><a href="#">Order Status</a></li>
-          <li><a href="#">My Wishlist</a></li>
-        </ul>
-      </div>
-      <div class="small-4 medium-4 large-4 columns">
-        <h5>About</h5>
-        <ul class="menu vertical">
-          <li><a href="#">Company</a></li>
-          <li><a href="#">Store Locator</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Support</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Career</a></li>
-        </ul>
-      </div>
-      <div class="small-4 medium-4 large-4 columns">
-        <h5>Social</h5>
-        <ul class="menu vertical">
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Youtube</a></li>
-        </ul>
-      </div>
-     </div>
+    <div class="footer-right">
+      <h6>Follow us</h6>
+      <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
+      <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+      <i class="fa fa-google-plus-square fa-3x" aria-hidden="true"></i>
+      <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
     </div>
-  </div>
-  <div class="ecommerce-footer-bottom-bar row">
-    <div class="small-12 medium-5 columns">
-      <ul class="bottom-links">
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms &amp; Conditions</a></li>
+  </footer>
+</div>
+<div id="engadget-footer-contact-details-container">
+  <footer id="engadget-footer-contact-details">
+    <div class="footer-left">
+      <div class="contact-details">
+        <ul>
+          <li>
+            <img class="thumbnail" src="/Users/user/Desktop/AIShA-project2/foundation2/img/logo4.png">
+          </li>
+          <li>
+            <i class="fa fa-phone fa-lg" aria-hidden="true"></i> 01234 567890</li>
+          <li>
+            <a data-toggle="animatedModal10">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i> Contact us</a>
+          </li>
+          <li>
+            <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i> Street, City, County, Country</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-right">
+      <ul class="menu align-right">
+        <li>
+          <a href="#">One</a>
+        </li>
+        <li>
+          <a href="#">Two</a>
+        </li>
+        <li>
+          <a href="#">Three</a>
+        </li>
+        <li>
+          <a href="#">Four</a>
+        </li>
       </ul>
     </div>
-    <div class="small-12 medium-2 columns ecommerce-footer-logomark">
-      <img src="https://placehold.it/50x50"/>
-    </div>
-    <div class="small-12 medium-5 columns">
-      <div class="bottom-copyright">
-        <span>©2017 Company Name. All rights reserved.</span>
-      </div>
-    </div>
-  </div>
+  </footer>
 </div>
+
 
 
 <!--============================================================================================-->
