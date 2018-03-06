@@ -18,5 +18,8 @@
   "homepage": "https://github.com/JairoFrey/shopping_app#readme",
   "dependencies": {
     "dotenv": "^5.0.1"
+  },
+  "devDependencies": {
+    "motion-ui": "^1.2.3"
   }
 }
