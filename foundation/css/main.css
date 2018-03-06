@@ -6,10 +6,12 @@ html {
     line-height: 1.4;
 }
 
-#backgroundMain{
-background-image: url("../img/Brick-Wall-Realistic/4683.jpg");
-background-size: cover;
-height: 950px;
+body{
+  background: url("../img/Brick-Wall-Realistic/4683.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100%;
 }
 
 
@@ -86,14 +88,25 @@ $animated-search-form-transition-duration: 0.4s;
   }
 }
 
+
+
 #header{
-    margin-left: 3em;
+    margin-left: 0em;
+    margin-top: 0em;
+    
 }
+
+button.secondary.button{
+  color: #c2c2a3;
+}
+
+
 
 .top-bar{
     background: transparent;
-  /*  overflow: visible;*/
+  /*  overflow: visible; */
 }
+
 
 .top-bar-section ul li{
     background: transparent;
@@ -137,7 +150,7 @@ h6{
 }
 
 form{
-    padding-top: 15em;
+    padding-top: 10em;
     margin-right: 10em;
     margin-left: 10em;
 }
@@ -419,7 +432,7 @@ form{
 
 .ecommerce-footer {
   background-color: #fefefe;
-  padding: 70px 20px 40px 20px;
+  padding: 40px 20px 40px 20px;
 }
 
 #ecommerce-footer-links h5 {
