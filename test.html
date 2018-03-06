@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geolocation</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 40%;
+        width: 40%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+  	<h1>Test stuff</h1>
+
+  	<br>
+  	<!-- This is the div that the map will populate -->
+    <div id="map"></div>
+
+	<br>
+    <div>
+<!-- Amazon search bar which directs you to Amazon using our affiliate link -->
+	<form method="get" action="http://www.amazon.com/gp/search" target="_blank">
+	<input type="hidden" name="tag" value="aisha104-20">
+	<input type="hidden" name="ie" value="UTF8">
+	<input type="hidden" name="index" value="blended">
+	<input name="keywords" size="25" type="text" value="">
+	<input type="submit" value="Search Amazon for this product">
+	</form>	
+	</div>
+
+	<gcse:searchbox-only></gcse:searchbox-only>
+
+	<gcse:searchresults-only></gcse:searchresults-only>
+
+	<script src="public/assets/js/googlesearch.js"></script>
+    <script src="public/assets/js/googlemaps.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZV6IFNhRZ1bKL5SyIy9PS-JFh6GTpcfo&callback=initMap">
+    </script>
+  </body>
+</html>
+
