@@ -6,7 +6,7 @@ html {
     line-height: 1.4;
 }
 
-body{
+#backgroundMain{
   background: url("../img/Brick-Wall-Realistic/4683.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -100,6 +100,13 @@ button.secondary.button{
   color: #c2c2a3;
 }
 
+/*form.gcs-search-box{
+  padding-top: 2px;
+}*/
+
+#___gcse_0, form.gsc-search-box{
+  margin-top: 2px;
+}
 
 
 .top-bar{
@@ -149,9 +156,12 @@ h6{
   padding: 6rem;
 }
 
+#searchTop{
+  padding-top: 10em;
+}
+
 form{
-    padding-top: 10em;
-    margin-right: 10em;
+   margin-right: 10em;
     margin-left: 10em;
 }
 
