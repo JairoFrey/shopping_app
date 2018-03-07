@@ -28,25 +28,36 @@
 
   <div class="top-content-section">
     <div class="top-bar">
-      <div class="top-bar-left">
+      <div data-sticky-container id="navBar">
+        <div class="title-bar" data-sticky data-options="marginTop:0;" style="background-color:transparent;height:50px;">
+          <div class="title-bar-left">
+            <img src="img/logo6.png">
+          </div>
+      <div class="top-bar-right">
         <ul class="menu">
-          <li class="menu-text">
-            <img src="http://placehold.it/75x30" alt="logo">
-          </li>
-            <div data-sticky-container id="navBar">
-              <div class="title-bar" data-sticky data-options="marginTop:0;" style="background-color:transparent;height:50px;">
-                <div class="title-bar-left">
-                  <img src="img/logo6.png">
-                </div>
+           <br>   
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+
+            <div> 
+              <li>
                 <div class="title-bar-right">
-                  <ul class="menu align-right" id="header-links">
-                    <li>
-                      <input type="search" id="searchBox" placeholder="Search" style="background-color:transparent;padding-right:30px">
-                    </li>
-                    <li>
-                      <button type="button" class="secondary button">Search for Item</button>
-                    </li>
+                <div class="input-group input-group-rounded">
+                  <input class="input-group-field" type="search">
+                  <div class="input-group-button">
+                    <input type="submit" class="button secondary" id="button-search" value="Search">
+                  </div>
                 </div>
+                </div>
+            </li>
+            </div>
               </div>
             </div>
         </ul>
@@ -54,14 +65,12 @@
     </div>
   </div>
 <br>
-<br><br><br><br>
 <br>
-<br>
-<br>
+<h1 style="color:white"><bold>You Like Shopping. Shopping Likes You.</bold></h1>
   <div class="middle-content-section">
-    <h1>Super Compelling Headline</h1>
-    <form class="callout text-center">
-      <h2>Become A Member</h2>
+    
+    <form class="callout text-center" id="signup">
+      <h2 style="color:white">Become A Member</h2>
       <div class="floated-label-wrapper">
         <label for="full-name">Full name</label>
         <input type="text" id="full-name" name="full name input" placeholder="Full name">
@@ -74,7 +83,20 @@
         <label for="pass">Password</label>
         <input type="password" id="pass" name="password input" placeholder="Password">
       </div>
-      <input class="button expanded" type="submit" value="Sign up">
+      <input class="button expanded" id="button" type="submit" value="Sign up">
+    
+    <h7>OR</h7>
+    <h2 style="color:white">Log In</h2>
+      <div class="floated-label-wrapper">
+        <label for="username">Username</label>
+        <input type="email" id="email-login" name="email input" placeholder="Username/Email">
+      </div>
+
+      <div class="floated-label-wrapper">
+        <label for="pass">Password</label>
+        <input type="password" id="password" name="password input" placeholder="Password">
+      </div>
+      <input class="button expanded" id="button" type="submit" value="Log In">
     </form>
 
   </div>
@@ -97,101 +119,97 @@
 <!--============================================================================================-->
 <!--FOOTER-->
 <!--============================================================================================-->
+<footer>
 <div class="ecommerce-footer">
-  
-    <div class="grid-x grid-margin-x" id="ecommerce-footer-links">
-      <div class="cell small-4">
 
-        <h5>Help</h5>
-        <ul class="menu vertical">
-          <li>
-            <a href="#"> FAQs</a>
-          </li>
-          <li>
-            <a href="#">Return Policy</a>
-          </li>
-          <li>
-            <a href="#">Shipping &amp; Delivery</a>
-          </li>
-          </ul>
-          </div>
-          
-          <div class="cell auto">
-            <h5>My Account</h5>
-            <ul class="menu vertical">
-              <li>
-                <a href="#">Sign In</a>
-              </li>
-              <li>
-                <a href="#">Order Status</a>
-              </li>
-              <li>
-                <a href="#">My Wishlist</a>
-              </li>
-            </ul>
-          </div>
-          
-          <div class="cell auto">
-            <h5>About</h5>
-            <ul class="menu vertical">
-              <li>
-                <a href="#">Company</a>
-              </li>
-              <li>
-                <a href="#">Store Locator</a>
-              </li>
-              <li>
-                <a href="#">Team</a>
-              </li>
-              <li>
-                <a href="#">Support</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
-              <li>
-                <a href="#">Career</a>
-              </li>
-            </ul>
-          </div>
-          
-          <div class="cell auto">
-            <h5>Social</h5>
-            <ul class="menu vertical">
-              <li>
-                <a href="#">Facebook</a>
-              </li>
-              <li>
-                <a href="#">Twitter</a>
-              </li>
-              <li>
-                <a href="#">Instagram</a>
-              </li>
-              <li>
-                <a href="#">Youtube</a>
-              </li>
-            </ul>
-          </div>
-          
-          </div>
-          
-          
-          <div class="ecommerce-footer-bottom-bar row">
-            <div class="small-12 medium-5 columns">
-          
-              <span>Copyright ©2017 AIShA All rights reserved</span>
-          
-            </div>
-          
-          </div>
-          
-          
-          
-          </div>
-        </ul>
-      </div>
+
+  <div class="grid-x grid-margin-x" id="ecommerce-footer-links">
+    <div class="cell large-4">
+
+      <h5>Help</h5>
+      <ul class="menu vertical">
+        <li>
+          <a href="#">FAQs</a>
+        </li>
+        <li>
+          <a href="#">Return Policy</a>
+        </li>
+        <li>
+          <a href="#">Shipping &amp; Delivery</a>
+        </li>
+      </ul>
     </div>
 
+    <div class="cell auto">
+      <h5>My Account</h5>
+      <ul class="menu vertical">
+        <li>
+          <a href="#">Sign In</a>
+        </li>
+        <li>
+          <a href="#">Order Status</a>
+        </li>
+        <li>
+          <a href="#">My Wishlist</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="cell auto">
+      <h5>About</h5>
+      <ul class="menu vertical">
+        <li>
+          <a href="#">Company</a>
+        </li>
+        <li>
+          <a href="#">Store Locator</a>
+        </li>
+        <li>
+          <a href="#">Team</a>
+        </li>
+        <li>
+          <a href="#">Support</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li>
+          <a href="#">Career</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="cell auto">
+      <h5>Social</h5>
+      <ul class="menu vertical">
+        <li>
+          <a href="#">Facebook</a>
+        </li>
+        <li>
+          <a href="#">Twitter</a>
+        </li>
+        <li>
+          <a href="#">Instagram</a>
+        </li>
+        <li>
+          <a href="#">Youtube</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+
+  <div class="ecommerce-footer-bottom-bar row">
+    <div class="small-12 medium-5 columns">
+
+      <span>Copyright ©2017 AIShA All rights reserved</span>
+
+    </div>
+
+  </div>
+    
+</footer>
 <!--============================================================================================-->
         
 
