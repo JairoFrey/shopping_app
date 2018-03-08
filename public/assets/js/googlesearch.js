@@ -9,5 +9,5 @@
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(gcse, s);
   })();
-// This creates it's own div for the google search and results
-// <gcse:search></gcse:search>
+
+

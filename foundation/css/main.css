@@ -6,7 +6,7 @@ html {
     line-height: 1.4;
 }
 
-body{
+#backgroundMain{
   background: url("../img/Brick-Wall-Realistic/4683.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -61,7 +61,20 @@ textarea {
     padding: 0.2em 0;
 }
 
+@import 'foundation';
 
+@include foundation-xy-grid-classes(
+  /* options
+  $base-grid: true,
+  $margin-grid: true,
+  $padding-grid: true,
+  $block-grid: true,
+  $collapse: true,
+  $offset: true,
+  $vertical-grid: true,
+  $frame-grid: true
+  */
+);
 
 
 /* ==========================================================================
@@ -100,6 +113,14 @@ button.secondary.button{
   color: #c2c2a3;
 }
 
+#mainContainer{
+  margin-top: 8em;
+  margin-left: 3em;
+}
+
+#___gcse_0, form.gsc-search-box{
+  margin-top: 2px;
+}
 
 
 .top-bar{
@@ -149,10 +170,33 @@ h6{
   padding: 6rem;
 }
 
+#searchTop{
+  padding-top: 10em;
+}
+
 form{
-    padding-top: 10em;
-    margin-right: 10em;
+   margin-right: 10em;
     margin-left: 10em;
+}
+
+/*#productDetails{
+  display: inline;
+  margin: 2em;
+  padding: 2em;
+}*/
+
+#ebayProduct{
+  width: 25em;
+}
+
+.work-feature-block-image {
+  display: inline;
+  margin: auto;
+/*  padding: 10px 0;*/
+}
+
+.work-feature-block-header{
+  display: inline;
 }
 
 .product-option-selection input[type=radio] {
@@ -243,6 +287,156 @@ form{
     background: transparent;
 
 }
+
+h2.article-row-content-header{
+  color: black;
+  font-weight: bolder;
+}
+
+.article-row-section {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: 3rem;
+  margin-top: 6rem;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.article-row-section-inner {
+  -webkit-flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  max-width: 100%;
+}
+
+@media print, screen and (min-width: 40em) {
+  .article-row-section-inner {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+@media print, screen and (min-width: 40em) {
+  .article-row-section-inner {
+    -webkit-flex: 0 0 83.33333%;
+        -ms-flex: 0 0 83.33333%;
+            flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    max-width: 83.33333%;
+  }
+}
+
+@media print, screen and (min-width: 40em) and (min-width: 40em) {
+  .article-row-section-inner {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+}
+
+.article-row-section-header {
+  padding: 1.5rem 0;
+  margin: 0;
+  line-height: 1;
+}
+
+.article-row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top: 3px solid #e6e6e6;
+  padding: 1.5rem 0;
+
+}
+
+@media print, screen and (min-width: 40em) {
+  .article-row {
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.article-row-img img {
+  width: 100%;
+}
+
+@media print, screen and (min-width: 40em) {
+  .article-row-img img {
+    max-width: none;
+    width: auto;
+  }
+}
+
+.article-row-content {
+  padding: 1.5rem 0 0;
+  color: #0a0a0a;
+}
+
+@media print, screen and (min-width: 40em) {
+  .article-row-content {
+    padding: 0 0 0 1.5rem;
+  }
+}
+
+.article-row-content-header {
+  font-size: 1.5rem;
+}
+
+.article-row-content-description {
+  font-size: 1.25rem;
+}
+
+.article-row-content-author,
+.article-row-content-time {
+  font-size: 0.875rem;
+  margin-bottom: 0;
+  color: #8a8a8a;
+}
+
+.article-row-reversed .article-row-content {
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+  padding: 0 1.5rem 0 0;
+}
+
+.article-row-reversed .article-row-img {
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+  padding: 0 0 1.5rem 0;
+}
+
+@media print, screen and (min-width: 40em) {
+  .article-row-reversed .article-row-content {
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .article-row-reversed .article-row-img {
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+
+
 
 
 .ecommerce-header a {
